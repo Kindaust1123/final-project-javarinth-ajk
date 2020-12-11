@@ -3,6 +3,18 @@
 <head>
     <title>The JavaRinth</title>
 </head>
+<style> canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {text-align: center ;}
+p {text-align: center;}
+</style>
 <body>
     <h2>The JavaRinth Maze</h2>
     <p>
@@ -12,11 +24,6 @@
     </p>
     <canvas width="616" height="556" id="mazecanvas">Can't load the maze game, because your browser doesn't support HTML5.</canvas>
     <noscript>JavaScript is not enabled. To play the game, you should enable it.</noscript>
-    <style> canvas {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }</style>
     <script>
         
 
@@ -165,5 +172,7 @@
         window.addEventListener('keydown', moveRect, true);
         createTimer(150);  // 2 and a half minute timer // 
     </script>
+
+    <button onclick="window.location.href=window.location.href">Try Again!</button>
 </body>
 </html>
